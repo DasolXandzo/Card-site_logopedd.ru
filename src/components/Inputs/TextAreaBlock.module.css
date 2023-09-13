@@ -1,0 +1,39 @@
+.textField{
+    color: #faebd8;
+    border: solid #51392b 3px;
+    border-radius: 10px;
+    background-color: #7e5943;
+    padding: 1% 0 1% 2vw;
+    margin: 1vh 0 1vh 0;
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgba(204, 204, 204, 0.5);
+} 
+textarea::-moz-placeholder {
+  color: rgba(204, 204, 204, 0.5);
+}
+
+.title{
+    margin-left: 1vw;
+    color: #51392b;
+}
+
+@media (min-width: 200px){
+    .textField{
+        font-size: 18px;
+        width: 80vw;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+@media (min-width: 990px){
+    .textField{
+        font-size: 26px;
+        width: 50vw;
+    }
+    .title{
+        font-size: 28px;
+    }
+}

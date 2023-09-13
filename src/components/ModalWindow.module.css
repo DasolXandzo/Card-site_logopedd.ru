@@ -1,0 +1,35 @@
+.ModalWindow {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    background: rgba(0,0,0, 0.85);
+    width: 100vw;
+    height: 100vh;
+}
+
+.ModalWindowContent {
+    background: rgba(255, 226, 187, 0.95);;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 3% 2% 3%;
+}
+
+.ModalWindow.active {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center; /* см. ниже */
+    align-items: center;
+    /* Чтобы окно не прилипало к границе
+    браузера установим отступы */
+
+}

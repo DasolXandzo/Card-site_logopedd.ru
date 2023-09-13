@@ -1,0 +1,34 @@
+.container{
+  font-size: 28px;
+  margin: 1% 0 1% 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  color: #51392b;
+}
+
+.lineBlock{
+  margin: -3vh 3vw -3vh 3vw;
+  width: 50vw;
+}
+
+@media (min-width: 200px){
+  .container{
+    height: 85vh;
+  }
+  .title{
+    font-size: 85%;
+  }
+}
+@media (min-width: 990px){
+  .container{
+    height: 97vh;
+  }
+  .title{
+    font-size: 100%;
+  }
+}

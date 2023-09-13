@@ -1,0 +1,30 @@
+.buttonStyle{
+    color: #51392b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(250, 235, 216, 0.85);
+    padding: 1% 0 1% 0;
+    text-decoration: none;
+}
+
+.buttonStyle:hover{
+    border-radius: 25px;
+    background-color: rgba(251, 203, 141, 0.85);
+    transition-duration: 0.2s;
+}
+
+@media (min-width: 200px){
+    .buttonStyle{
+        font-size: 18px;
+        width: 80vw;
+    }
+}
+@media (min-width: 990px){
+    .buttonStyle{
+        font-size: 20px;
+        width: 50vw;
+    }
+}

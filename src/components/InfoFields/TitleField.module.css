@@ -1,0 +1,33 @@
+.block{
+    color: #faebd8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1vw;
+}
+
+.title{
+    font-size: 110%;
+}
+
+.postTitle{
+    margin-top: 1vh;
+    font-size: 60%;
+}
+
+.description{
+    font-size: 80%;
+}
+
+@media (min-width: 200px){
+    .block{
+        font-size: 22px;
+        width: 90vw;
+    }
+}
+@media (min-width: 990px){
+    .block{
+        font-size: 28px;
+        width: 80vw;
+    }
+}
