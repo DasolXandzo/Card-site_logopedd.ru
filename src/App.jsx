@@ -118,7 +118,14 @@ export default function App() {
           {checkThird && <div><TextAreaBlock post={{name: 'comment', cols: '40', rows: '2', placeholder: 'Здесь вы можете рассказать о себе и описать цель визита'}} /></div>}
 
           <FormButton type='submit' disabled={!formValid} onClick={() => {setSuccessVisible(true); window.ym(94915211,'reachGoal','btnSendForm')}}>ОТПРАВИТЬ ФОРМУ</FormButton>
-          {successModal && <ModalWindow visible={successModal} setVisible={setSuccessVisible}><div className='title'>Сообщение отправлено и будет обработано в порядке очереди.<br></br>Ожидайте ответ.</div></ModalWindow>}
+          
+          {successModal && <ModalWindow visible={successModal} setVisible={setSuccessVisible}>
+
+            <CancelButton onClick={() => {setVisible(false); setSuccessVisible(false)}}></CancelButton>
+
+            <div className='title'>Сообщение отправлено и будет обработано в порядке очереди.<br></br>Ожидайте ответ.</div>
+          
+          </ModalWindow>}
 
         </form>
 
